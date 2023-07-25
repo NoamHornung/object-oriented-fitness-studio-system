@@ -5,11 +5,11 @@ The C++ program will read a config file as input, containing information about t
 
 Each trainer can perform all the suggested workout types. There are four types of customers in this studio. Each customer type has a unique workout strategy. A customer may request a workout from a trainer more than once. Each trainer in the studio has a limited amount of available spots in their workout session (provided in the config file).
 
-#### The Program flow:
+### The Program flow:
 The program receives the path of the config file as the first command-line argument string. The config file contains the info about the number of trainers, the trainer’s capacities, and the workout that is available in the studio. Once the program starts, it prints "Studio is now open!" to the screen. Then the program waits for the user to enter an action to execute. After each executed action, the program waits for the next action in a loop. The program ends when the user enters the action "closeall".
 
 The program will use several classes, including Studio, Trainer, Workout, Customer (with different ordering strategies), and BaseAction (for different action types). 
-#### The actions that can be performed by the user:
+### The actions that can be performed by the user:
 open a given trainer's workout session and assigns a list of customers- Syntax: open <trainer_id> <customer1>, < customer1_strategy> <customer2>, < customer2_strategy>. where the <customer_strategy>  is the 3-letter code for the ordering strategy.
 
 making workout orders- When the customers enter the trainer's workout session. Syntax: order <trainer_id>
@@ -28,7 +28,7 @@ BackupStudio – save all studio information in a global variable called “back
 
 RestoreStudio – restore the backed-up studio status and overwrite the current studio status. Syntax: restore
 
-#### Ordering strategies:
+### Ordering strategies:
 Sweaty Customer- always orders all the cardio activities from the beginning of the work_options to their end (as is received in the input file). (3-letter code – swt).
 
 Cheap Customer- always orders the cheapest workout from the workout options. This customer orders only once. (3-letter code – chp).
