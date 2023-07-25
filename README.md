@@ -11,19 +11,30 @@ The program receives the path of the config file as the first command-line argum
 The program will use several classes, including Studio, Trainer, Workout, Customer (with different ordering strategies), and BaseAction (for different action types). 
 #### The actions that can be performed by the user:
 open a given trainer's workout session and assigns a list of customers- Syntax: open <trainer_id> <customer1>, < customer1_strategy> <customer2>, < customer2_strategy>. where the <customer_strategy>  is the 3-letter code for the ordering strategy.
+
 making workout orders- When the customers enter the trainer's workout session. Syntax: order <trainer_id>
+
 moving customers between trainers- Syntax: move <origin_trainer_id> <dest_trainer_id> <customer_id>
+
 closing trainer sessions- Syntax: close <trainer_id>
+
 printing available workout options of the studio- Syntax: workout_options
+
 printing trainer status- Syntax: status <trainer_id>
+
 printing the actions log- Syntax: log
+
 BackupStudio – save all studio information in a global variable called “backup”. Syntax: backup
+
 RestoreStudio – restore the backed-up studio status and overwrite the current studio status. Syntax: restore
 
 #### Ordering strategies:
 Sweaty Customer- always orders all the cardio activities from the beginning of the work_options to their end (as is received in the input file). (3-letter code – swt).
+
 Cheap Customer- always orders the cheapest workout from the workout options. This customer orders only once. (3-letter code – chp).
+
 Heavy Muscle Customer- They always order all the anaerobic exercises from the most expensive to the cheapest. (3-letter code – mcl).
+
 Full Body Customer- They always start with the cheapest cardio exercise offered, continue to the most expensive mix-type workout, and finish with the cheapest anaerobic exercise they can find. (3-letter code – fbd)
 
 
