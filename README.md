@@ -1,4 +1,4 @@
-# object_oriented_gym_system
+# object-oriented-fitness-studio-system
 The fitness studio offers various workout plans, and they have talented trainers specializing in different workout options like Yoga, Pilates, CrossFit, etc. Each exercise can be either Cardio, Anaerobic or Mixed.
 
 The C++ program will read a config file as input, containing information about the number of trainers, trainer capacities, and details about the available workout options. The program will then simulate the fitness studio management system and handle actions like opening and closing workout sessions, assigning customers to trainers, calculating trainer's salaries, moving customers between trainers, and printing various reports.
